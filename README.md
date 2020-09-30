@@ -1,2 +1,2 @@
-# Project-6-ROS2
-6. Introduction to ROS2
+# Project-6-Robot-Arm
+6. Robot Arm Simulation
