@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+
+<launch>
+
+  <!-- send urdf to param server -->
+  <param name="robot_description" textfile="$(find hurba_robot_arm)/urdf/robot_arm.urdf"/>
+
+  <!-- Joint state publisher is not needed, because joint states are published by Gazebo -->
+
+  <!-- Send robot states to tf -->
+  <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" respawn="false" output="screen"/>
+
+  <rosparam file ="$(find hurba_robot_arm)/config/controller.yaml"/>
+  <node name= "controller_spawner" pkg= "controller_manager" type="controller_manager" ns="/robot_arm" output="screen" respawn="false" args="spawn arm_controller gripper_controller"/>
+
+</launch>
+

@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+
+<launch>
+
+    <!-- Launch other relevant files-->
+    <include file="$(find hurba_robot_arm)/launch/world.launch"/>
+
+    <!--launch rviz and remap initialpose topic to waypoint for waypoints navigation-->
+    <node name="rviz" pkg="rviz" type="rviz" respawn="false" args="-d $(find hurba_robot_arm)/rviz/basic_view.rviz">
+    </node>
+
+</launch>
