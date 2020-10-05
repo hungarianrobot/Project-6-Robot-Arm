@@ -2,50 +2,50 @@ robot_arm:
   gazebo_ros_control:   
     pid_gains:
       First_joint:
-        p: 900.0
-        i: 70.0 
-        d: 10.0
-        i_clamp_max: 100
-        i_clamp_min: -100
-      Third_joint:
-        p: 40000.0
+        p: 1200.0
         i: 100.0 
-        d: 100.0
-        i_clamp_max: 500
-        i_clamp_min: -500
+        d: 150.0
+        i_clamp_max: 500.0
+        i_clamp_min: -500.0
+      Third_joint:
+        p: 20000.0
+        i: 100.0 
+        d: 500.0
+        i_clamp_max: 500.0
+        i_clamp_min: -500.0
       Fourth_joint:
         p: 4000.0
+        i: 50.0 
+        d: 100.0
+        i_clamp_max: 100.0
+        i_clamp_min: -100.0
+      Fifth_joint:
+        p: 200.0
         i: 0.0 
         d: 10.0
-        i_clamp_max: 30
-        i_clamp_min: -30
-      Fifth_joint:
-        p: 100.0
-        i: 5.0 
-        d: 0.0
-        i_clamp_max: 30
-        i_clamp_min: -30
+        i_clamp_max: 100.0
+        i_clamp_min: -100.0
       Sixth_joint:
-        p: 1000.0
-        i: 5.0 
-        d: 20.0
-        i_clamp_max: 100
-        i_clamp_min: -100
+        p: 200.0
+        i: 0.0
+        d: 10.0
+        i_clamp_max: 100.0
+        i_clamp_min: -100.0
       Gripper_Base_joint:
-        p: 100.0
-        i: 50.0 
+        p: 600.0
+        i: 30.0 
         d: 0.0
-        i_clamp_max: 30
-        i_clamp_min: -30
+        i_clamp_max: 100.0
+        i_clamp_min: -100.0
       Left_Finger_joint:
-        p: 100.0
-        i: 50.0 
-        d: 0.0
-        i_clamp_max: 30
-        i_clamp_min: -30
+        p: 300.0
+        i: 10.0 
+        d: 10.0
+        i_clamp_max: 100.0
+        i_clamp_min: -100.0
       Right_Finger_joint:
-        p: 100.0
-        i: 50.0 
-        d: 0.0
-        i_clamp_max: 30
-        i_clamp_min: -30
+        p: 300.0
+        i: 10.0 
+        d: 10.0
+        i_clamp_max: 100.0
+        i_clamp_min: -100.0
