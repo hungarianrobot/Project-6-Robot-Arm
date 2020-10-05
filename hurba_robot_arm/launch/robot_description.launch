@@ -8,9 +8,12 @@
   <!-- Joint state publisher is not needed, because joint states are published by Gazebo -->
 
   <!-- Send robot states to tf -->
-  <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" respawn="false" output="screen"/>
+  <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" respawn="false" output="screen">
+    <remap from="joint_states" to="/robot_arm/joint_states" />
+  </node>
 
   <rosparam file ="$(find hurba_robot_arm)/config/controller.yaml"/>
+  <rosparam file ="$(find hurba_robot_arm)/config/pid_params.yaml"/>
   <node name= "controller_spawner" pkg= "controller_manager" type="controller_manager" ns="/robot_arm" output="screen" respawn="false" args="spawn arm_controller gripper_controller"/>
 
 </launch>
