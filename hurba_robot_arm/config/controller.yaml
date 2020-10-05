@@ -14,9 +14,9 @@ robot_arm:
       - Gripper_Base_joint
 
     constraints:
-      goal_time: 2.0
+      goal_time: 0.6
 
-    state_publish_rate: 100
+    state_publish_rate: 25
 
   gripper_controller:
     type: "position_controllers/JointTrajectoryController"
