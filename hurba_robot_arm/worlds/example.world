@@ -86,28 +86,28 @@
       <heading_deg>0</heading_deg>
     </spherical_coordinates>
     <state world_name='default'>
-      <sim_time>299 28000000</sim_time>
-      <real_time>27 978341500</real_time>
-      <wall_time>1601881036 231590100</wall_time>
-      <iterations>27720</iterations>
+      <sim_time>305 453000000</sim_time>
+      <real_time>6 506508800</real_time>
+      <wall_time>1601988815 214098900</wall_time>
+      <iterations>6425</iterations>
       <model name='cardboard_box'>
-        <pose frame=''>1.53382 -0.935496 1.164 0 -0 0</pose>
+        <pose frame=''>2.38727 -0.935496 1.164 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose frame=''>1.53382 -0.935496 1.164 0 -0 0</pose>
+          <pose frame=''>2.38727 -0.935496 1.164 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>-0 0 0 0 -0 0</acceleration>
-          <wrench>-0 0 0 0 -0 0</wrench>
+          <acceleration>0 -0 -0 0 -0 0</acceleration>
+          <wrench>0 -0 -0 0 -0 0</wrench>
         </link>
       </model>
       <model name='coke_can'>
-        <pose frame=''>1.6096 0.960783 1.01164 -0.001541 -0.003794 0.001525</pose>
+        <pose frame=''>2.28664 0.961745 1.01697 0.00188 -0.008019 0.001403</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose frame=''>1.6096 0.960783 1.01164 -0.001541 -0.003794 0.001525</pose>
+          <pose frame=''>2.28664 0.961745 1.01697 0.00188 -0.008019 0.001403</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>3.7e-05 -6.9e-05 -1.8e-05 0.001202 0.000595 0.000161</acceleration>
-          <wrench>1.4e-05 -2.7e-05 -7e-06 0 -0 0</wrench>
+          <acceleration>-0.000725 -0.001367 -0.000144 0.025062 -0.011726 -0.00581</acceleration>
+          <wrench>-0.000283 -0.000533 -5.6e-05 0 -0 0</wrench>
         </link>
       </model>
       <model name='ground_plane'>
@@ -121,20 +121,20 @@
         </link>
       </model>
       <model name='table'>
-        <pose frame=''>1.91677 -0.938642 0 0 -0 0</pose>
+        <pose frame=''>2.81671 -0.938642 0 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose frame=''>1.91677 -0.938642 0 0 -0 0</pose>
+          <pose frame=''>2.81671 -0.938642 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='table_clone'>
-        <pose frame=''>1.98469 0.951855 0 0 -0 0</pose>
+        <pose frame=''>2.91295 0.951855 0 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose frame=''>1.98469 0.951855 0 0 -0 0</pose>
+          <pose frame=''>2.91295 0.951855 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
@@ -146,7 +146,7 @@
     </state>
     <gui fullscreen='0'>
       <camera name='user_camera'>
-        <pose frame=''>-5.03437 -2.58972 4.78439 0 0.598796 0.208</pose>
+        <pose frame=''>-6.28172 -2.69177 5.56289 0 0.598796 0.208</pose>
         <view_controller>orbit</view_controller>
         <projection_type>perspective</projection_type>
       </camera>
