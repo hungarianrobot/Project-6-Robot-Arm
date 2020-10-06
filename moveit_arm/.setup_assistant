@@ -1,0 +1,11 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: hurba_robot_arm
+    relative_path: urdf/robot_arm.urdf
+    xacro_args: ""
+  SRDF:
+    relative_path: config/robot_arm.srdf
+  CONFIG:
+    author_name: David Dudas
+    author_email: david.dudas@outlook.com
+    generated_timestamp: 1601984777

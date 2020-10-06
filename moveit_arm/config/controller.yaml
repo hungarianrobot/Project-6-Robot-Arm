@@ -1,0 +1,12 @@
+controller_manager_ns: /robot_arm
+controller_list:
+  - name: /robot_arm/arm_controller
+    action_ns: follow_joint_trajectory
+    type: FollowJointTrajectory
+    joints:
+      - First_joint
+      - Third_joint
+      - Fourth_joint
+      - Fifth_joint
+      - Sixth_joint
+      - Gripper_Base_joint

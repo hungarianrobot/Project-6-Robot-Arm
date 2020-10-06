@@ -1,0 +1,12 @@
+controller_list:
+  - name: fake_Arm_controller
+    joints:
+      - First_joint
+      - Third_joint
+      - Fourth_joint
+      - Fifth_joint
+      - Sixth_joint
+      - Gripper_Base_joint
+initial:  # Define initial robot poses.
+  - group: Arm
+    pose: Home

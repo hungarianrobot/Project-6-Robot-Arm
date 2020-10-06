@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+
+<launch>
+
+    <!-- Launch other relevant files-->
+    <include file="$(find hurba_robot_arm)/launch/world.launch"/>
+    
+    <include file="$(find moveit_arm)/launch/move_group.launch" />
+
+    <node name="rviz" pkg="rviz" type="rviz" respawn="false" args="-d $(find moveit_arm)/rviz/moveit.rviz">
+    </node>
+
+
+</launch>
